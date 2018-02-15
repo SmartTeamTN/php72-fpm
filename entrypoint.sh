@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [ ! -d vendor ]; then
-  composer install
+  composer install --no-dev
 fi
 
-tail -f /dev/null
+tail /dev/null
