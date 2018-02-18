@@ -38,7 +38,6 @@ ADD php.ini /usr/local/etc/php/
 ADD opcache.ini /usr/local/etc/php/conf.d/
 
 COPY entrypoint /usr/bin/entrypoint
-RUN . /usr/bin/entrypoint
 ENTRYPOINT ["entrypoint"]
 
 CMD ["php"]
