@@ -37,7 +37,4 @@ RUN docker-php-ext-install -j$(nproc) gd iconv pdo pdo_mysql curl bcmath \
 ADD php.ini /usr/local/etc/php/
 ADD opcache.ini /usr/local/etc/php/conf.d/
 
-ADD entrypoint.sh /usr/bin/entrypoint.sh
-CMD sh /usr/bin/entrypoint.sh
-
 CMD ["php"]
