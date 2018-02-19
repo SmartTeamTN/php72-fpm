@@ -36,5 +36,3 @@ RUN docker-php-ext-install -j$(nproc) gd iconv pdo pdo_mysql curl bcmath \
 # Add php.ini and opcache configuration
 ADD php.ini /usr/local/etc/php/
 ADD opcache.ini /usr/local/etc/php/conf.d/
-
-CMD ["php"]
