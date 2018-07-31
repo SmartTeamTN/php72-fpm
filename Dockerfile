@@ -30,7 +30,7 @@ RUN docker-php-ext-enable mcrypt
 
 # Type docker-php-ext-install to see available extensions
 RUN docker-php-ext-install -j$(nproc) gd iconv pdo pdo_mysql curl bcmath \
-    mbstring json xml xmlrpc zip intl soap
+    mbstring json xml xmlrpc zip intl opcache soap
 
 # Add php.ini and opcache configuration
 ADD php.ini /usr/local/etc/php/
